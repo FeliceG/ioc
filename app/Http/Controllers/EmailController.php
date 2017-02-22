@@ -22,7 +22,7 @@ public function send() {
   return 'Basic, plain text email sent.';
 }
 
-public function accepted {
+public function accepted() {
   $user = \Auth::user();
 
   if(!user) return redirect()->guest('login');

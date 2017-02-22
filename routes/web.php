@@ -20,8 +20,6 @@ Route::get('/eligibility', 'PageController@eligibility');
 
 Route::get('/guidelines', 'PageController@guidelines');
 
-Route::get('/send', 'EmailController@send');
-
 Route::group(['middleware' => ['web']], function () {
 
       Route::get('/research/show', 'EditController@getShowResearch');
