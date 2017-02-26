@@ -107,15 +107,12 @@ function addAuthors(evt) {
     if (evt.target.id) {
         if (evt.target.id == "auth_button") {
           if (countAuths < 5) {
-					alert('The value of countAuths 1:' + countAuths);
 					var p = createElements(countAuths);
 					addElements.appendChild( p );
 			} else if (countAuths == 4) {
-				document.getElementById('countAuths').value = countAuths;
-				alert("You have reached the maximum number of co-authors for this submission.");
-				alert('The value of countAuths:' + countAuths);
+				  document.getElementById('countAuths').value = countAuths;
+				  alert("You have reached the maximum number of co-authors for this submission.");
 			}
-							alert('The value of countAuths 2:' + countAuths);
         }
 			document.getElementById('countAuths').value = countAuths;
     }

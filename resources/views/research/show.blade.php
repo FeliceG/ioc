@@ -4,10 +4,8 @@
 
 
 @section('content')
-
-
-
 <div class="content">
+
 	<h3 class="bold">Coaching in Leadership and Healthcare 2017 Submissions</h3>
 
 	<p>Thank you for your research submission(s) for consideration in the Coaching in Leadership and Healthcare 2017 conference, scheduled October 13-14, 2017.

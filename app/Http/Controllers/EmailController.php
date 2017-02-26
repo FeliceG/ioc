@@ -12,9 +12,9 @@ use Illuminate\Http\Request;
 class EmailController extends Controller
 {
 
-public function send() {
-  \Mail::send([], [], function ($message) {
-    $message->to('felice.gardner@gmail.com')
+/*public function send() {
+*  \Mail::send([], [], function ($message) {
+*    $message->to('felice.gardner@gmail.com')
     ->subject('Test Message')
     ->setBody('This is a test message; Testing 123.');
   });
@@ -47,3 +47,4 @@ echo 'HTML email sent.';
 }
 
 }
+*/

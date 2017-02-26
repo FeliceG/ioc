@@ -1,6 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
+<div class="content">
 
                 <h3 class="bold">Information</h3>
 
@@ -54,5 +55,5 @@
                   <p>Decisions will be announced by <span class="bold" class="red"> Friday, June 15, 2017.</span></p>
 
                 </div>
-
-@endsection
+</div>
+@stop
