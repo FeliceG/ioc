@@ -20,6 +20,7 @@
                       <ul>
                         <li>Leadership Coaching</li>
                         <li>Health and Wellness Coaching</li>
+                        <li>Coaching in Education</li>
                         <li>Positive Psychology Coaching</li>
                         <li>Life Coaching</li>
                         <li>Other relevant fields</li>

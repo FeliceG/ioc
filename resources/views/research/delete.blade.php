@@ -41,18 +41,21 @@
 									<span class="bold">Your submission is for a research:</span> {{ $researches[$i]->type }}<br>
 									<span class="bold">Title:</span> {{ $researches[$i]->title }} <br>
 									<span class="bold">Type:</span> {{ $researches[$i]->type }} <br>
-									@if ($researches[$i]->type == "Poster" || $researches[$i]->type == "Both")
+									@if ($researches[$i]->type == "Paper" || $researches[$i]->type == "Both")
 									<span class="bold">Track:</span> {{ $researches[$i]->track }} <br>
 									@endif
+									<br>
 									<span class="bold">Background and Objectives:</span> {{ $researches[$i]->research }} <br>
+									<br>
 									<span class="bold">Abstract:</span> {{ $researches[$i]->abstract }} <br>
-							<br>
+							    <br>
 						<legend><span class="bold">Authors</span></legend>
 									<span class="bold">Main Author:</span> {{ $user->first }} {{ $user->last }}<br>
 									<br>
 									@for ($n = 0; $n < $researches[$i]->auth_count; $n++)
-									<?php $first = "first" . $n; $last = "last" . $n; ?>
-									<span class="bold">Co-Author:</span> {{ $researches[$i]->$first }} {{ $researches[$i]->$last }}<br>
+									<?php $first = "first" . $n; $last = "last" . $n; $org = "org" . $n; ?>
+									<span class="bold">Co-Author:</span> {{ $researches[$i]->$first }} {{ $researches[$i]->$last }}
+									       <span class="bold">Organization: </span>{{ $researches[$i]->$org }}<br>
 									<br>
 									@endfor
 

@@ -62,6 +62,7 @@ class EditController extends Controller
 
       $count = \ioc\Research::where('user_id', '=', $user->id)->count();
       session(['researches' => $researches, 'count' => $count]);
+      $request->flashOnly('research_id');
       return view('/research/edit')->with(['researches' => $researches, 'count' => $count]);
     }
 
@@ -90,8 +91,10 @@ class EditController extends Controller
         for ($i=0; $i < $request->countAuths; $i++) {
             $first = "first" . $i;
             $last = "last" . $i;
+            $org = "org". $i;
             $research->$first = $request->$first;
             $research->$last = $request->$last;
+            $research->$org = $request->$org;
         }
         $research->user_id = $user->id;
 

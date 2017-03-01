@@ -93,6 +93,9 @@ function createElements(i) {
 	p.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Last Name:&nbsp;&nbsp;&nbsp;</strong>";
 	var addLast = createFields("last", i);
 	p.appendChild(addLast);
+	p.innerHTML += "<br><strong>Organization:&nbsp;&nbsp;&nbsp;</strong>";
+	var addOrganization = createFields("org", i);
+	p.appendChild(addOrganization);
 
 	return p;
 }
@@ -127,13 +130,13 @@ function paperTrack(evt) {
 //    var checkSelect = document.getElementById("paper_poster");
 //    console.log("checkSelect: " + checkSelect.value);
 
-//console.log(evt.target.id);
+//console.log(evt.target.value);
 
 if (evt.target.id) {
-		if(evt.target.id == "paper" || evt.target.id == "both_research") {
+		if(evt.target.value == "Paper" || evt.target.value == "Both") {
 			document.getElementById("paper_track").style.display = "block";
 		}
-		else if (evt.target.id == "poster") {
+		else if (evt.target.value == "Poster") {
 			document.getElementById("paper_track").style.display = "none";
 		}
   }

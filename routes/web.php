@@ -14,10 +14,6 @@
 
 Route::get('/', 'PageController@home');
 
-Route::get('/information', 'PageController@information');
-
-Route::get('/eligibility', 'PageController@eligibility');
-
 Route::get('/guidelines', 'PageController@guidelines');
 
 Route::group(['middleware' => ['web']], function () {

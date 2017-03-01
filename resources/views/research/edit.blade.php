@@ -40,7 +40,7 @@
 
 					<legend>Research Information</legend></br>
 			      <p><strong>Research Presentation Format:&nbsp;&nbsp;</strong>Indicate if you wish to present your research as an oral paper or a poster. If you select "Both", the reviewers will decide whether the research will be presented orally or as a poster.</p>
-						<select form="researchEdit_form" id="paper_poster" name="type" value='{{ $research->type }}'>
+						<select form="researchEdit_form" id="paper_poster" name="type" value='{{ old('type') }}'>
 			          <option selected>-----</option>
 								<option id="poster" name="poster" value="Poster" @if ( $research->type == "Poster" ) selected="selected" @endif>Poster</option>
 								<option id="paper" name="paper" value="Paper"  @if ( $research->type == "Paper") selected="selected" @endif>Paper</option>
@@ -50,7 +50,7 @@
 			      <br>
 						<div id="paper_track">
 			      <p><strong>Paper Track Selection:&nbsp;&nbsp;</strong>Indicate which track you would like to present your research.</p>
-			      <select form="researchEdit_form" id="track" name="track" value='{{ $research->track }}'>
+			      <select form="researchEdit_form" id="track" name="track" value='{{ old('track') }}'>
 			          <option selected>-----</option>
 								<option id="leadership" name="lead" value="Leadership" @if ( $research->track == "Leadership" ) selected="selected" @endif>Leadership</option>
 								<option id="both_track" name="both_track" value="Both" @if ( $research->track == "Both" ) selected="selected" @endif>Both</option>
@@ -59,15 +59,15 @@
 					  </div>
 			      <br>
 			      <br>
-			      <p><strong>Research Title:  </strong><textarea form="researchEdit_form" id="title" name="title" placeholder="Please enter a title" value='{{ $research->title }}' rows="2" cols="70">{{ $research->title }}</textarea></p>
+			      <p><strong>Research Title:  </strong><textarea form="researchEdit_form" id="title" name="title" placeholder="Please enter a title" value='{{ old('title') }}' rows="2" cols="70">{{ $research->title }}</textarea></p>
 			      <div id="title_count"></div>
 						<br>
 			      <p><strong>Research Information:  </strong>Describe the Background and Objectives; Design and Methods; Findings and Discussion. <strong>500 word limit for this section.</strong></p>
-			      <textarea form="researchEdit_form" name="research" value='{{ $research->research }}'  rows="10" cols="100" id="research" >{{ $research->research }}</textarea>
+			      <textarea form="researchEdit_form" name="research" value='{{ old('research') }}'  rows="10" cols="100" id="research" >{{ $research->research }}</textarea>
 			      <div id="research_count"><strong>500 word limit for Research Description. Total words so far: </strong></div>
 						<br>
 			      <p><strong>Research Abstract:  </strong>Summarize the Background and Objectives; Design and Methods; Findings and Discussion into a short abstract that will be published in the conference syllabus. <strong>250 word limit for this section.</strong></p>
-			      <textarea id="abstract" name="abstract" value='{{ $research->abstract }}' form="researchEdit_form"  min="2" max="200" rows="6" cols="100">{{ $research->abstract }} </textarea>
+			      <textarea id="abstract" name="abstract" value='{{ old('abstract') }}' form="researchEdit_form"  min="2" max="200" rows="6" cols="100">{{ $research->abstract }} </textarea>
 			      <div id="abstract_count"><strong>250 word limit for Abstract. Total words so far: </strong></div>
 			      <br>
 						<br>
@@ -75,17 +75,20 @@
 						<p><strong>Co-Authors:&nbsp;&nbsp;</strong>Add a maximum of five co-authors. Click the "Add Author" button to add additional fields.</p>
 
 						@for ($n = 0; $n < $research->auth_count; $n++)
-						<?php $first = "first" . $n; $last = "last" . $n; ?>
+						<?php $first = "first" . $n; $last = "last" . $n; $org = "org" . $n; ?>
+						<?php $first_field = $research->$first; $last_field = $research->$last; $org_field = $research->$org; ?>
 		<!--				<span class="bold">Co-Author:</span> {{ $research->$first }} {{ $research->$last }}<br>  -->
-						<strong>First Name:&nbsp;&nbsp;&nbsp;</strong><textarea id='{{$first}}' form="researchEdit_form" class="first" name='{{$first}}' value="" rows="1" cols="35">{{ $research->$first }}</textarea>&nbsp;&nbsp;&nbsp;
-						<strong>Last Name:&nbsp;&nbsp;&nbsp;</strong><textarea id='{{$last}}' form="researchEdit_form" class="last" name='{{$last}}'  value="" rows="1" cols="35">{{ $research->$last }}</textarea><br>
+						<strong>First Name:&nbsp;&nbsp;&nbsp;</strong><textarea id='{{$first}}' form="researchEdit_form" class="first" name='{{$first}}' value='{{ old('first') }}' rows="1" cols="40">{{ $research->$first }}</textarea>&nbsp;&nbsp;&nbsp;
+						<strong>Last Name:&nbsp;&nbsp;&nbsp;</strong><textarea id='{{$last}}' form="researchEdit_form" class="last" name='{{$last}}'  value='{{ old('last') }}' rows="1" cols="40">{{ $research->$last }}</textarea><br>
+  					<strong>Organization:&nbsp;&nbsp;&nbsp;</strong><textarea id="'{{$org}}'" form="researchEdit_form" class="org" name='{{$org}}' value='{{ old('org') }}' rows="1" cols="40">{{ $research->$org }}</textarea>
 						@endfor
-
+						<br>
 						@if ($research->auth_count < 5)
 			      <div id="authors">
-						<span class="bold">Co-Authors: </span><br>
+	<!--					<span class="bold">Co-Authors: </span><br>  -->
 						</div>
-						<input type="text" id="countAuths" form="researchEdit_form" name="countAuths" value="{{ $count }}">{{ $count }}
+						<input type="hidden" id="countAuths" form="researchEdit_form" name="countAuths" value="{{ $count }}">
+						<br>
 						<button type="button" id="auth_button" class="button">Add Author</button><br><br>
 						@else
 						<strong><p>You have reached the maximum of 5 Co-Authors.</p></strong>

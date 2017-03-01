@@ -24,14 +24,20 @@ class CreateResearchesTable extends Migration
 	$table->integer('auth_count');
 	$table->text('first0')->nullable();
 	$table->text('last0')->nullable();
+  $table->text('org0')->nullable();
   $table->text('first1')->nullable();
 	$table->text('last1')->nullable();
+  $table->text('org1')->nullable();
   $table->text('first2')->nullable();
 	$table->text('last2')->nullable();
+  $table->text('org2')->nullable();
   $table->text('first3')->nullable();
 	$table->text('last3')->nullable();
+  $table->text('org3')->nullable();
   $table->text('first4')->nullable();
 	$table->text('last4')->nullable();
+  $table->text('org4')->nullable();
+  $table->binary('poster')->nullable();
 
 	});
     }

@@ -24,7 +24,8 @@
             'csrfToken' => csrf_token(),
         ]) !!};
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  -->
   </head>
 
 
@@ -44,15 +45,12 @@
                     <!-- Authentication Links -->
 
                     @if (Auth::guest())
-                        <li><a id="home" href="{{ url('/home') }}">Home</a></li>
-                        <li><a id="guest_info" href='/information'>Information</a></li>
-                        <li><a id="guest_eligibility" href='/eligibility'>Eligibility</a></li>
+                        <li><a id="home" href="{{ url('/') }}">Home</a></li>
                         <li><a id="guest_guide" href='/guidelines'>Guidelines</a></li>
                         <li><a id="login" href="{{ url('/login') }}">Login</a></li>
                         <li><a id="register" href="{{ url('/register') }}">Register</a></li>
                     @else
-                        <li><a id="research_home" href="{{ url('/research/home') }}">Home</a></li>
-                        <li><a id="info" href='/information'>Information</a></li>
+                        <li><a id="research_home" href="{{ url('/') }}">Home</a></li>
                         <li><a id="research_guide" href='/guidelines'>Guidelines</a></li>
                         <li><a id="add" href='/research/add'>Submit Entry</a></li>
                         <li><a id="show" href='/research/show'>Show/Edit Entry</a></li>
@@ -83,7 +81,6 @@
 <br>
 </div>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="/js/app.js"></script>
 <script src="/js/ioc.js"></script>
 

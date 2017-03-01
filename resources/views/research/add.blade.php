@@ -5,24 +5,25 @@
 @section('content')
 <h3 class="bold">Coaching in Leadership and Healthcare 2017: Paper and Poster Application</h3>
 
+@if(count($errors)  > 0)
+	<ul>
+			@foreach ($errors->all() as $error)
+				<li>{{ $error }}</li>
+			@endforeach
+	</ul>
+@endif
+
+@if(Session::get('message') != null)
+			 <div class='flash_message'>{{ Session::get('message') }}</div>
+	 @endif
+
 <div class="content">
 	<p>Please provide information for your research submission (paper or poster) for consideration in the Coaching in
 		Leadership and Healthcare 2017 conference. To make a submission, please review the information below and complete
 		the research form.</p>
 		<br>
-		@if(count($errors)  > 0)
-				@foreach($errors->all() as $error )
-							<ul>
-							  <li class="bold"><span class="red">	{{ $error }} </span></li>
-					  	</ul>
-		      @endforeach
-		@endif
 
-		@if(Session::get('error') != null)
-	         <div class='flash_message'>{{ Session::get('error') }}</div>
-	     @endif
 		<!-- Form to gather user data -->
-
 
 				<form method="POST" role="form" id="research_form" action="/research">
 				<!-- CSRF token for safety -->
@@ -34,7 +35,8 @@
 
 				<div id="authors">
 	      <p><strong>First Name:&nbsp;&nbsp;&nbsp;</strong><textarea id="first0" class="first" name="first0" value="" rows="1" cols="40"></textarea>&nbsp;&nbsp;&nbsp;
-	      <strong>Last Name:&nbsp;&nbsp;&nbsp;</strong><textarea id="last0" class="last" name="last0"  value="" rows="1" cols="40"></textarea></p>
+	      <strong>Last Name:&nbsp;&nbsp;&nbsp;</strong><textarea id="last0" class="last" name="last0"  value="" rows="1" cols="40"></textarea><br>
+			  <strong>Organization:&nbsp;&nbsp;&nbsp;</strong><textarea id="org0" class="org" name="org0" value="" rows="1" cols="40"></textarea></p>
 			  </div>
 
 				<input type="hidden" id="countAuths" name="countAuths" value="countAuths">

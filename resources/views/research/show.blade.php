@@ -57,9 +57,11 @@
 															<legend><span class="bold">Authors</span></legend>
 																		<span class="bold">Main Author:</span> {{ $user->first }} {{ $user->last }}<br>
 																		<br>
-																		@for ($n = 0; $n < $researches[$i]->auth_count; $n++)
-																		<?php $first = "first" . $n; $last = "last" . $n; ?>
-																		<span class="bold">Co-Author:</span> {{ $researches[$i]->$first }} {{ $researches[$i]->$last }}<br>
+																		<?php $auth_count = $researches[$i]->auth_count; ?>
+																		@for ( $n = 0; $n < $auth_count; $n++ )
+																		<?php $first = "first" . $n; $last = "last" . $n; $org = "org" . $n; ?>
+																		<span class="bold">Co-Author:</span> {{ $researches[$i]->$first }} {{ $researches[$i]->$last }}
+																		<span class="bold">Organization:</span> {{ $researches[$i]->$org}}<br>
 																		<br>
 																		@endfor
 
