@@ -13,21 +13,10 @@
 <li>Papers and posters can describe original empirical research, meta-analyses, and theoretical discussions.</li>
 <li><span class="bold">The deadline</span> for online applications submission is May 15, 2017 by 11:59 PM EDT. Decisions will be announced by  July 1, 2017.</li>
 <li><span class="bold">Main Author</span>: applicant submitter.</li>
-<li><span class="bold">Co-Author(s)</span>: include up to 5 co-author names and organizations.</li>
+<li><span class="bold">Co-Author(s)</span>: include up to five co-author names and organizations.</li>
 <li><span class="bold">Title:</span> maximum of 40 words.</li>
-<li><span class="bold">Research:</span> maximum of 500 words to include <strong>background, objectives, design, methods, and findings.</strong></li>
+<li><span class="bold">Research:</span> maximum of 500 words to include <strong>background, objectives, design, methods, findings and discussions.</strong></li>
 <li><span class="bold">Brief Abstract:</span> maximum of 250 words. Summary of research for publication in the conference program.</li>
-</ul>
-
-<p class="bold">The criteria for selecting and awarding posters include:</p>
-
-<ul>
-  <li>Clarity of research aims, rationale, and theoretical framework</li>
-  <li>Description of study design and procedures;</li>
-  <li>Quality of statistical and/or qualitative analysis &#40;or of theoretical discussion if conceptual paper&#41;;</li>
-  <li>Contribution to coaching theory, research, and/or practice;</li>
-  <li>Visual presentation (for posters);</li>
-  <li>Potential to publish.</li>
 </ul>
 
 <p class="bold">Additional information for accepted posters:</p>
@@ -90,7 +79,7 @@ Award and Honorary Mention winners.</p>
   <li>Description of study design and procedures;</li>
   <li>Quality of statistical and/or qualitative analysis (or of theoretical discussion if conceptual paper);</li>
   <li>Contribution to coaching theory, research, and/or practice;</li>
-  <li>Visual presentation (for posters);</li>
+  <li>Visual presentation;</li>
   <li>Potential to publish.</li>
 </ul>
 

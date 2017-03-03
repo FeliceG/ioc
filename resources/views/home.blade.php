@@ -6,7 +6,7 @@
 
                     <h3 class="bold">Home</h3>
 
-                  	<p>Presentations of research on all aspects of Coaching are invited for the ninth annual
+                  	<p>Presentations of research on all aspects of Coaching are invited for the tenth annual
                       "Coaching in Leadership and Healthcare: Theory, Practice and Results" Conference. The
                       conference is organized by the Institute of Coaching, McLean Hospital, and Harvard Medical School
                        on October 13-14, 2017 at <a href="http://www.marriott.com/hotels/travel/boswf-renaissance-boston-waterfront-hotel/" target="_blank">
