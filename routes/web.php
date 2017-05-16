@@ -16,6 +16,8 @@ Route::get('/', 'PageController@home');
 
 Route::get('/guidelines', 'PageController@guidelines');
 
+Route::get('/email/confirm', 'EmailController@confirm');
+
 Route::group(['middleware' => ['web']], function () {
 
       Route::get('/research/show', 'EditController@getShowResearch');

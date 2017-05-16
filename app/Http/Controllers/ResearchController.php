@@ -88,14 +88,14 @@ class ResearchController extends Controller
         } else {
            $researches = \ioc\Research::where('user_id', '=', $user->id)->get();
           \Session::flash('message', 'You have reached the maximum of 2 research submissions.');
-           return view('research.show')->with(['researches' => $researches, 'count' => $count, 'user' => $user]);
+           return redirect('/research/show')->with(['researches' => $researches, 'count' => $count, 'user' => $user]);
            //redirect()->route('/research/show');
         }
 
           $researches = \ioc\Research::where('user_id', '=', $user->id)->get();
 
           session(['researches' => $researches, 'count' => $count, 'user' => $user]);
-          return view('research.show')->with(['researches' => $researches, 'count' => $count, 'user' => $user]);
+          return redirect('/research/show')->with(['researches' => $researches, 'count' => $count, 'user' => $user]);
     }
 
     /**
@@ -107,6 +107,8 @@ class ResearchController extends Controller
     public function show($id)
     {
         $user = \Auth::user();
+
+          dump("show");
 
         if(is_null($user))
           return redirect()->route('login');

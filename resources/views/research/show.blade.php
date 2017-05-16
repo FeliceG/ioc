@@ -56,6 +56,7 @@
 									<br>
 															<legend><span class="bold">Authors</span></legend>
 																		<span class="bold">Main Author:</span> {{ $user->first }} {{ $user->last }}<br>
+																		<span class="bold">Organization:</span> {{ $user->organization }}<br>
 																		<br>
 																		<?php $auth_count = $researches[$i]->auth_count; ?>
 																		@for ( $n = 0; $n < $auth_count; $n++ )

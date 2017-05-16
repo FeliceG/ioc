@@ -3,7 +3,11 @@
 <!-- Author form to add authors associated with research papers and posters -->
 
 @section('content')
+
+<div class="content">
+
 <h3 class="bold">Coaching in Leadership and Healthcare 2017: Paper and Poster Application</h3>
+<br>
 
 @if(count($errors)  > 0)
 	<ul>
@@ -17,7 +21,6 @@
 			 <div class='flash_message'>{{ Session::get('message') }}</div>
 	 @endif
 
-<div class="content">
 	<p>Please provide information for your research submission (paper or poster) for consideration in the Coaching in
 		Leadership and Healthcare 2017 conference. To make a submission, please review the information below and complete
 		the research form.</p>
@@ -35,11 +38,11 @@
 
 				<div id="authors">
 	      <p><strong>First Name:&nbsp;&nbsp;&nbsp;</strong><textarea id="first0" class="first" name="first0" value="" rows="1" cols="40"></textarea>&nbsp;&nbsp;&nbsp;
-	      <strong>Last Name:&nbsp;&nbsp;&nbsp;</strong><textarea id="last0" class="last" name="last0"  value="" rows="1" cols="40"></textarea><br>
+	      <strong>Last Name:&nbsp;&nbsp;&nbsp;</strong><textarea id="last0" class="last" name="last0"  value="" rows="1" cols="40"></textarea><br><br>
 			  <strong>Organization:&nbsp;&nbsp;&nbsp;</strong><textarea id="org0" class="org" name="org0" value="" rows="1" cols="40"></textarea></p>
 			  </div>
 
-				<input type="hidden" id="countAuths" name="countAuths" value="countAuths">
+				<input type="hidden" id="countAuths" name="countAuths" value="countAuths"><br>
 	      <button type="button" id="auth_button" class="button">Add Author</button><br><br>
 				<br>
 	      <p><strong>Research Presentation Format:&nbsp;&nbsp;</strong>Indicate if you wish to present your research as an oral paper or a poster. If you select "Both", the reviewers will decide whether the research will be presented orally or as a poster.</p>
@@ -74,10 +77,9 @@
 	      <p><strong>Research Abstract: </strong>Summarize the Background and Objectives; Design and Methods; Findings and Discussion into a short abstract that will be published in the conference syllabus. <strong>250 word limit for this section.</strong></p>
 	      <textarea id="abstract" name="abstract" value='{{ old('abstract', '') }}' form="research_form"  min="2" max="200" rows="6" cols="120"></textarea>
 	      <div id="abstract_count"><strong>250 word limit for Abstract. Total words so far: </strong></div>
-
 				</form>
 	      <br>
-
+				<br>
 				</fieldset>
 
 		    <button id="submit" form="research_form" class="button">SUBMIT</button><br><br>

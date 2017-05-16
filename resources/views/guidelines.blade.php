@@ -11,7 +11,7 @@
 
 <ul>
 <li>Papers and posters can describe original empirical research, meta-analyses, and theoretical discussions.</li>
-<li><span class="bold">The deadline</span> for online applications submission is May 15, 2017 by 11:59 PM EDT. Decisions will be announced by  July 1, 2017.</li>
+<li><span class="bold">The deadline</span> for online applications submission has been extended to May 25, 2017 by 11:59 PM EDT. Decisions will be announced by  July 1, 2017.</li>
 <li><span class="bold">Main Author</span>: applicant submitter.</li>
 <li><span class="bold">Co-Author(s)</span>: include up to five co-author names and organizations.</li>
 <li><span class="bold">Title:</span> maximum of 40 words.</li>

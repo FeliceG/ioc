@@ -4,6 +4,8 @@ namespace ioc;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Messages\MailMessage;
+use ioc\Notifications\ResetPassword as ResetPasswordNotification;
 
 class User extends Authenticatable
 {
@@ -30,5 +32,12 @@ class User extends Authenticatable
     public function research(){
         return $this->hasMany('\ioc\Research');
     }
+
+    public function sendPasswordResetNotification($token) {
+
+      $this->notify(new ResetPasswordNotification($token));
+    }
+
+
 
 }

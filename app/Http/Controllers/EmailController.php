@@ -2,15 +2,27 @@
 
 namespace ioc\Http\Controllers;
 
-use DB;
-use Carbon;
-use App\User;
-use App\Research;
-use Illuminate\Support\Facades\Mail;
+
+use App\Mail\SubmissionConfirmed;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Http\Controllers\Controller;
+
 
 class EmailController extends Controller
 {
+
+
+public function confirm(Request $request, $research, $count, $user)
+
+{
+     $research = Research::findOrFail($research);
+
+     Mail::to($request->user())->send(new SubmissionConfirmed($research));
+     return redirect('/research/show')->with(['researches' => $researches, 'count' => $count, 'user' => $user]);
+}
+
+}
 
 /*public function send() {
 *  \Mail::send([], [], function ($message) {

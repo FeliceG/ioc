@@ -22,7 +22,7 @@ class EditController extends Controller
 
         if ($count === 1 || $count === 2 )  {
             return view('/research/show')->with(['researches' => $researches, 'count' => $count, 'user' => $user]);
-        } elseif ( $count < 2 ) {
+        } elseif ( $count == 0 ) {
             return view('/research/add');
         }
     }
@@ -41,7 +41,7 @@ class EditController extends Controller
 
       session(['research_id' => $request->research_id, 'researches' => $researches, 'count' => $count]);
 
-      return redirect('/research/edit')->with(['research_id' => $request->research_id]);
+      return redirect('/research/edit')->with(['research_id' => $request->research_id, 'researches' => $researches, 'count' => $count, 'user' => $user]);
     }
 
     public function getEditResearch(Request $request)
@@ -61,9 +61,8 @@ class EditController extends Controller
         }
 
       $count = \ioc\Research::where('user_id', '=', $user->id)->count();
-      session(['researches' => $researches, 'count' => $count]);
-      $request->flashOnly('research_id');
-      return view('/research/edit')->with(['researches' => $researches, 'count' => $count]);
+      session(['researches' => $researches, 'count' => $count, 'research_id' => $research_id]);
+      return view('/research/edit')->with(['researches' => $researches, 'count' => $count, 'research_id' => $research_id, 'user' => $user]);
     }
 
 
@@ -118,9 +117,9 @@ class EditController extends Controller
       $count = \ioc\Research::where('user_id', '=', $user->id)->count();
       $researches = \ioc\Research::where('user_id', '=', $user->id)->get();
 
-       if(is_null($researches))
+       if($count === 0)
         {
-          \Session::flash('message', 'ID for Research Not Found. You have been redirected to add a research submission.');
+          \Session::flash('message', 'No research submissions to delete. You have been redirected to add a research submission.');
            return redirect('research/add');
         }
 

@@ -87,13 +87,13 @@ function createFields(name, i) {
 function createElements(i) {
 
 	var p = document.createElement('p');
-	p.innerHTML = "<strong>First Name:&nbsp;&nbsp;&nbsp;</strong>";
+	p.innerHTML = "<br><strong>First Name:&nbsp;&nbsp;&nbsp;</strong>";
 	var addFirst = createFields("first", i);
 	p.appendChild(addFirst);
 	p.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Last Name:&nbsp;&nbsp;&nbsp;</strong>";
 	var addLast = createFields("last", i);
 	p.appendChild(addLast);
-	p.innerHTML += "<br><strong>Organization:&nbsp;&nbsp;&nbsp;</strong>";
+	p.innerHTML += "<br><br><strong>Organization:&nbsp;&nbsp;&nbsp;</strong>";
 	var addOrganization = createFields("org", i);
 	p.appendChild(addOrganization);
 
@@ -115,9 +115,9 @@ function addAuthors(evt) {
 			} else if (countAuths == 4) {
 				  document.getElementById('countAuths').value = countAuths;
 				  alert("You have reached the maximum number of co-authors for this submission.");
-			}
-        }
-			document.getElementById('countAuths').value = countAuths;
+			    }
+					document.getElementById('countAuths').value = countAuths;
+      }
     }
 };
 
@@ -126,11 +126,6 @@ function addAuthors(evt) {
 //selection list to determine which track to present research.
 
 function paperTrack(evt) {
-
-//    var checkSelect = document.getElementById("paper_poster");
-//    console.log("checkSelect: " + checkSelect.value);
-
-//console.log(evt.target.value);
 
 if (evt.target.id) {
 		if(evt.target.value == "Paper" || evt.target.value == "Both") {
@@ -142,126 +137,40 @@ if (evt.target.id) {
   }
 }
 
-//When "Submit" is clicked, gather all the input field information and store in object to
-//store in window.localStorage to retrieve and add to HTML form when user returns to browser.
 
-    function storeObject(evt) {
+function highLight(evt) {
 
-    if ( evt.target.id == "submit" ) {
+	var active = "home";
+	var target = evt.target.id;
 
-// traverse authors to see how many author fields have been created--up to 4 fields possible.
-		var authors_first = document.getElementsByClassName("first");
-		var authors_last = document.getElementsByClassName("last");
-		var firsts = [];
-		var lasts = [];
-
-	    //check the number of co-authors entered and iterate through the list to add first and
-	    //last names to the arrays firsts and lasts
-
-	    if ( authors_first.length > 0 ) {
-				for (var i=0; i < authors_first.length; i++) {
-				    if ( authors_first[i].value != "null" && authors_last[i].value != "null" ) {
-						firsts[i] = authors_first[i].value;
-						lasts[i] = authors_last[i].value;
-					}
-				}
-		 }
-
-		//check title field to see if text entered. If yes, add to variable title.
-		var title = "";
-		if (document.getElementById("title").value != "null") {
-            title = document.getElementById("title").value;
-        }
-
-		//check paper_poster field to see if text entered. If yes, add to variable paper_poster.
-		//If "Paper" is selected, check to if a track was selected. If yes, add to variable track.
-        var paper_poster = "";
-		if (document.getElementById("paper_poster").value != "null") {
-            paper_poster = document.getElementById("paper_poster").value;
-            if (paper_poster == "Paper") {
-                var track = "";
-		        if (document.getElementById("track").value != "null") {
-                    track = document.getElementById("track").value;
-                }
-            }
-        }
-
-        //check to see if text for research was added. If yes, add to variable research.
-        var research = "";
-        if (document.getElementById("research").value != "null") {
-            research = document.getElementById("research").value;
-        }
-
- 		//check to see if abstract information was added. If yes, add to variable summary.
-        var summary = "";
-        if (document.getElementById("abstract").value != "null") {
-            var summary = document.getElementById("abstract").value;
-        }
-
-				//check to see if abstract information was added. If yes, add to variable summary.
-				var countAuths = document.getElementsByClassName("first").length;
-//				document.getElementById("countAuths") = countAuths;
-					 if (authCounts == null) {
-							 var countAuths = 0;
-					 }
-
-        // Create data structure to store data in localStorage
-
-        var researchData = {};
-        researchData.firsts = firsts;
-        researchData.lasts =  lasts;
-				researchData.countAuths = countAuths;
-        researchData.title = title;
-        researchData.paper_poster = paper_poster;
-        researchData.track = track;
-        researchData.research = research;
-        researchData.summary = summary;
-
-        window.localStorage.setItem("researchData", JSON.stringify(researchData));
-   }
+  if (evt.target.id) {
+		if( target == "guide" || target == "login" || target == "reg" || target == "r_home" || target == "r_guide" || target == "r_add" || target == "r_show" || target == "r_delete" ) {
+			active = target;
+		}
+	}
+	window.localStorage.setItem("active", JSON.stringify(active));
 }
+
 
 //When user refreshes browser, data from localStorage is sent to writeValueToField to add
 //to input fields in form.
 
     function writeValueToField(items) {
 
+			if ( items.length != 0 ) {
         var length = items.length;
-        var addElements = document.getElementById('authors');
 
-        //iterate through co-author information and create fields if more than one co-author
-        //and add first and last name to each new author field. Check all other fields for
-        //data. If not null, add information to the input field for title, paper_poster,
-        //track for paper if paper selected, research, and abstract.
-
-        for ( var element in items ) {
-            if ( element == 'firsts' && items.firsts != "null") {
-                var count = items.firsts.length;
-                for (var c=0; c < count; c++) {
-                   if ( c == 0 && items.firsts[0] != "null" && items.lasts[0] != "null" ) {
-						document.getElementById('first0').value = items.firsts[c];
-						document.getElementById('last0').value = items.lasts[c];
-                   } else if ( c > 0 && c < count && items.firsts[c] != "null" && items.lasts[c] != "null") {
-						var p = createElements(c);
-						addElements.appendChild( p );
-						document.getElementById('first'+c).value = items.firsts[c];
-						document.getElementById('last'+c).value = items.lasts[c];
-				   }
+				var count = document.getElementById('navHighlight').getElementsByTagName('A').length;
+				for (var i=0; i<count; i++) {
+					document.getElementById('navHighlight').getElementsByTagName('A')[i].removeAttribute("class");
+					var target = 	document.getElementById('navHighlight').getElementsByTagName('LI')[i];
 				}
-			} else if ( element == 'title' && items.title != "null" ) {
-                document.getElementById('title').value = items.title;
-            } else if (element == 'paper_poster' && items.paper_poster != "null") {
-                document.getElementById('paper_poster').value = items.paper_poster;
-            } else if (element == 'track' && items.track != "null" ) {
-                document.getElementById('track').value = items.track;
-                document.getElementById("paper_track").style.display = "block";
-            } else if ( element == 'research' && items.research != "null" ) {
-                document.getElementById('research').value  = items.research;
-            } else if ( element == 'summary' && items.summary != "null" ) {
-                document.getElementById('abstract').value  = items.summary;
-            }
-       }
-}
+				document.getElementById(items).setAttribute('class', 'active');
+				target = document.getElementById(items);
+				console.log("target" +target.innerHTML);
+			}
+	}
+
 
 //on click, invoke addAuthors function to see if button id = add_authors. If so, add authors.
 document.addEventListener("click", addAuthors);
@@ -273,24 +182,30 @@ document.addEventListener("keypress", checkWordcount);
 //to take input.
 document.addEventListener("click", paperTrack);
 
+document.addEventListener("click", highLight);
+
+
 //if target.id is equal to "submit", store the data from the input fields in the data object
 //and store in window.localStorage.
 //document.addEventListener("click", storeObject);
 
 
-
 window.onload = function() {
 
+//localStorage.clear();
+
     var length = window.localStorage.length;  //check to see if localStorage contains items
-//		Storage.clear();
 
 //if there is data in localStorage, pull those items out of storage and write out the
 //values to input fields by invoking writeValueToField function.
 
     if ( length != 0 ) {
- 		var items = JSON.parse(window.localStorage.getItem("researchData"));
-// 	    writeValueToField(items);
-     }
+ 		var items = JSON.parse(window.localStorage.getItem("active"));
+		    if ( items != null ) {
+		        console.log("items 1 " + items);
+		 	      writeValueToField(items);
+        }
+		}
 };
 
 })();

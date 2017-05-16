@@ -7,7 +7,7 @@
                 <p>Presentations of research on all aspects of Coaching are invited to the tenth annual
                   Coaching in Leadership and Healthcare: Theory, Practice and Results Conference. The
                   conference is organized by the Institute of Coaching, McLean Hospital, and Harvard Medical School
-                   on October 13-14, 2017 at <a href="http://www.marriott.com/hotels/travel/boswf-renaissance-boston-waterfront-hotel/" target="_blank">
+                   on October 13-14, 2017 at <a href="https://aws.passkey.com/go/McLeanHospitalCoaching" target="_blank">
                   The Renaissance Boston Waterfront Hotel</a>, Boston, MA.</p>
 
                 <p class="bold" class="line">Types of Submissions</p>
@@ -50,7 +50,7 @@
 
 
               	<p class="bold" class="line">Deadline Information</p>
-                  <p>The deadline for the receipt of online paper and poster submissions is <span class="bold" class="red"> May 15, 2017 by 11:59 PM EDT.</span></p>
+                  <p>The deadline for the receipt of online paper and poster submissions has been extended to <span class="bold" class="red">May 25, 2017 by 11:59 PM EDT.</span></p>
                   <p>Decisions will be announced by <span class="bold" class="red"> June 15, 2017.</span></p>
 
                 </div>

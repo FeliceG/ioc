@@ -15,7 +15,8 @@
 
     <!-- Styles -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/app.css" rel="stylesheet">
+    {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
+
     <link href="/css/ioc.css" rel="stylesheet">
 
     <!-- Scripts -->
@@ -24,7 +25,7 @@
             'csrfToken' => csrf_token(),
         ]) !!};
     </script>
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </head>
 
@@ -33,28 +34,29 @@
 
   <div class="container">
     <header class="logo">
-    <img src="/ioc_logo.gif" alt="IOC logo" >
-    <br><br>
+    <img src="/ioc_logo.jpg" alt="IOC logo" >
   </header>
 
     <nav class="navbar navbar-default">
 
           <div class="collapse navbar-collapse" id="app-navbar-collapse">
 
-                <ul class="nav navbar-nav ">
+                <ul class="nav navbar-nav">
                     <!-- Authentication Links -->
 
                     @if (Auth::guest())
-                        <li><a id="home" href="{{ url('/') }}">Home</a></li>
-                        <li><a id="guest_guide" href='/guidelines'>Guidelines</a></li>
+                    <div id="navHighlight">
+                        <li><a id="home" class="active" href="{{ url('/') }}">Home</a></li>
+                        <li><a id="guide" href='/guidelines'>Guidelines</a></li>
                         <li><a id="login" href="{{ url('/login') }}">Login</a></li>
-                        <li><a id="register" href="{{ url('/register') }}">Register</a></li>
+                        <li><a id="reg" href="{{ url('/register') }}">Register</a></li>
                     @else
-                        <li><a id="research_home" href="{{ url('/') }}">Home</a></li>
-                        <li><a id="research_guide" href='/guidelines'>Guidelines</a></li>
-                        <li><a id="add" href='/research/add'>Submit Entry</a></li>
-                        <li><a id="show" href='/research/show'>Show/Edit Entry</a></li>
-                        <li><a id="delete" href='/research/delete'>Delete Entry</a></li>
+                        <li><a id="r_home" href="{{ url('/') }}">Home</a></li>
+                        <li><a id="r_guide" href='/guidelines'>Guidelines</a></li>
+                        <li><a id="r_add" href='/research/add'>Submit Entry</a></li>
+                        <li><a id="r_show" href='/research/show'>Show/Edit Entry</a></li>
+                        <li><a id="r_delete" href='/research/delete'>Delete Entry</a></li>
+                        <li><a id="logout" href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                 {{ Auth::user()->first }} <span class="caret"></span>
@@ -62,7 +64,8 @@
                             <ul class="dropdown-menu" role="menu">
                               <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
                             </ul>
-                        </li>
+                          </li>
+                       </div>
                     @endif
                 </ul>
             </div>
