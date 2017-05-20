@@ -74,13 +74,15 @@ class ResearchController extends Controller
           $research->auth_count = $request->countAuths;
           $research->user_id = $user->id;
 
-          for ($i=0; $i < $request->countAuths; $i++) {
-            $first = "first" . $i;
-            $last = "last" . $i;
-            $org = "org" . $i;
-            $research->$first = $request->$first;
-            $research->$last = $request->$last;
-            $research->$org = $request->$org;
+          for ($i=0; $i <= $request->countAuths; $i++) {
+              $first = "first" . $i;
+              $last = "last" . $i;
+              $org = "org" . $i;
+               if ( ($request->$first != "") && ($request->$last != "") && ($request->$org != "")) {
+               $research->$first = $request->$first;
+               $research->$last = $request->$last;
+               $research->$org = $request->$org;
+            }
           }
 
           $research->save();

@@ -37,12 +37,14 @@
 				<p><strong>Co-authors:&nbsp;&nbsp;</strong>Add a maximum of five co-authors. Click the "Add Author" button to add additional fields.</p>
 
 				<div id="authors">
+
+				<?php $countAuths=0; ?>
 	      <p><strong>First Name:&nbsp;&nbsp;&nbsp;</strong><textarea id="first0" class="first" name="first0" value="" rows="1" cols="40"></textarea>&nbsp;&nbsp;&nbsp;
 	      <strong>Last Name:&nbsp;&nbsp;&nbsp;</strong><textarea id="last0" class="last" name="last0"  value="" rows="1" cols="40"></textarea><br><br>
 			  <strong>Organization:&nbsp;&nbsp;&nbsp;</strong><textarea id="org0" class="org" name="org0" value="" rows="1" cols="40"></textarea></p>
 			  </div>
 
-				<input type="hidden" id="countAuths" name="countAuths" value="countAuths"><br>
+				<input type="text" id="countAuths" name="countAuths" value="<?php echo $countAuths ?>">
 	      <button type="button" id="auth_button" class="button">Add Author</button><br><br>
 				<br>
 	      <p><strong>Research Presentation Format:&nbsp;&nbsp;</strong>Indicate if you wish to present your research as an oral paper or a poster. If you select "Both", the reviewers will decide whether the research will be presented orally or as a poster.</p>

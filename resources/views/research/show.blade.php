@@ -59,9 +59,9 @@
 																		<span class="bold">Organization:</span> {{ $user->organization }}<br>
 																		<br>
 																		<?php $auth_count = $researches[$i]->auth_count; ?>
-																		@for ( $n = 0; $n < $auth_count; $n++ )
+																		@for ( $n = 0; $n <= $auth_count; $n++ )
 																		<?php $first = "first" . $n; $last = "last" . $n; $org = "org" . $n; ?>
-																		<span class="bold">Co-Author:</span> {{ $researches[$i]->$first }} {{ $researches[$i]->$last }}
+																		<span class="bold">Co-Author:</span> {{ $researches[$i]->$first }} {{ $researches[$i]->$last }}<br>
 																		<span class="bold">Organization:</span> {{ $researches[$i]->$org}}<br>
 																		<br>
 																		@endfor
