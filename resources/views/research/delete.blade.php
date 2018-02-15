@@ -7,10 +7,10 @@
 
 <div class="content">
 
-	<h3 class="bold">Coaching in Leadership and Healthcare 2016: Poster Application</h3>
+	<h3 class="bold">Coaching in Leadership and Healthcare 2018: Poster Application</h3>
 	<br>
-	
-	<p>To delete your submission for consideration in the Coaching in Leadership and Healthcare 2016 conference,
+
+	<p>To delete your submission for consideration in the Coaching in Leadership and Healthcare 2018 conference,
 		click the "DELETE" button below to confirm you would like to continue with the delete process.</p>
 
 		@if(count($errors)  > 0)

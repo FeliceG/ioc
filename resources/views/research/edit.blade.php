@@ -6,7 +6,7 @@
 @section('content')
 
 <div class="content">
-	<h1>Coaching in Leadership and Healthcare 2017: Poster Application</h1>
+	<h1>Coaching in Leadership and Healthcare 2018: Poster Application</h1>
 	<p>Please provide information for your research submission (paper or poster) for consideration in the Coaching in Leadership and Healthcare 2016 conference, scheduled September 16-17, 2016. After providing the requested information for your research paper or poster, you'll be directed to the form to input author information.</p>
 
 		@if(count($errors)  > 0)
@@ -65,7 +65,7 @@
 						<br>
 			      <p><strong>Research Abstract:  </strong>Summarize the Background and Objectives; Design and Methods; Findings and Discussion into a short abstract that will be published in the conference syllabus. <strong>250 word limit for this section.</strong></p>
 			      <textarea id="abstract" name="abstract" value='{{ old('abstract') }}' form="researchEdit_form"  min="2" max="200" rows="6" cols="100">{{ $research->abstract }} </textarea>
-			      <div id="abstract_count"><strong>250 word limit for Abstract. Total words so far: </strong></div>
+			      <div id="abstract_count"><strong>200 word limit for Abstract. Total words so far: </strong></div>
 			      <br>
 						<br>
 						<legend class="bold">Authors</legend>

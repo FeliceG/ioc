@@ -6,10 +6,10 @@
 
                     <h3 class="bold">Home</h3>
                     <br>
-                  	<p>Presentations of research on all aspects of Coaching are invited for the tenth annual
+                  	<p>Presentations of research on all aspects of Coaching are invited for the eleventh annual
                       "Coaching in Leadership and Healthcare: Theory, Practice and Results" Conference. The
                       conference is organized by the <a href="http://www.instituteofcoaching.org" target="_blank">Institute of Coaching</a>,
-                      McLean Hospital, and Harvard Medical School on October 13-14, 2017 at <a href="https://aws.passkey.com/go/McLeanHospitalCoaching" target="_blank">
+                      McLean Hospital, and Harvard Medical School on September 28-29, 2018 at <a href="https://aws.passkey.com/go/McLeanHospitalCoaching" target="_blank">
                       The Renaissance Boston Waterfront Hotel</a>, Boston, MA.</p>
 
                   	<p class="bold" class="line">Types of Submissions</p>
@@ -27,7 +27,8 @@
                       </ul>
                       <p>We invite submissions proposals for:</p>
                     <ul>
-                    	<li><span class="bold">Oral Paper Presentations:</span> Accepted papers will be presented in oral sessions according to themes.</li>
+                    	<li><span class="bold">Oral Paper Presentations:</span> Accepted papers will be presented in oral sessions according to themes;
+                       there will be <u>20 minutes allocated for each presentation.</u></li>
                     	<li><span class="bold">Posters:</span> Accepted posters will be arranged in an exhibit during the poster session offering
                         opportunities to interact with authors and audience.</li>
                     </ul>
@@ -35,10 +36,10 @@
                     To submit a poster or paper, <span class="bold">please <a href="/register">register</a> to create an account. Once registered, you will be redirected to the submission form.</span></p>
 
                     <p><span class="bold" class="line">Deadline</span></br>
-                    The deadline for online paper and poster submissions is has been extended to
-                      <span class="bold" class="red"> May 25, 2017 by 11:59 PM EDT.</span></p>
+                    The deadline for online paper and poster submissions is
+                      <span class="bold" class="red"> May 25, 2018 by 11:59 PM EDT.</span></p>
 
-
+                    <p><span class="bold">Submission and registration will open on February 1st, 2018</span></p>
                 </div>
 
 @endsection

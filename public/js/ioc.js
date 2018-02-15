@@ -56,7 +56,7 @@ function checkWordcount(evt) {
             postMessage("Research Description", "research_count", count, 500, evt);
         } else if ( evt.target.id == "abstract" ) {
             var count = countWords(evt.target.value);
-            postMessage("Abstract", "abstract_count", count, 250, evt);
+            postMessage("Abstract", "abstract_count", count, 200, evt);
 		}
     }
 }

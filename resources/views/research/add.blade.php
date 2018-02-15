@@ -6,7 +6,7 @@
 
 <div class="content">
 
-<h3 class="bold">Coaching in Leadership and Healthcare 2017: Paper and Poster Application</h3>
+<h3 class="bold">Coaching in Leadership and Healthcare 2018: Paper and Poster Application</h3>
 <br>
 
 @if(count($errors)  > 0)
@@ -22,7 +22,7 @@
 	 @endif
 
 	<p>Please provide information for your research submission (paper or poster) for consideration in the Coaching in
-		Leadership and Healthcare 2017 conference. To make a submission, please review the information below and complete
+		Leadership and Healthcare 2018 conference. To make a submission, please review the information below and complete
 		the research form.</p>
 		<br>
 
@@ -78,7 +78,7 @@
 				<br>
 	      <p><strong>Research Abstract: </strong>Summarize the Background and Objectives; Design and Methods; Findings and Discussion into a short abstract that will be published in the conference syllabus. <strong>250 word limit for this section.</strong></p>
 	      <textarea id="abstract" name="abstract" value='{{ old('abstract', '') }}' form="research_form"  min="2" max="200" rows="6" cols="120"></textarea>
-	      <div id="abstract_count"><strong>250 word limit for Abstract. Total words so far: </strong></div>
+	      <div id="abstract_count"><strong>200 word limit for Abstract. Total words so far: </strong></div>
 				</form>
 	      <br>
 				<br>

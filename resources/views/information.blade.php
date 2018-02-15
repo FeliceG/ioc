@@ -5,10 +5,10 @@
 
                 <h3 class="bold">Information</h3>
 
-                <p>Presentations of research on all aspects of Coaching are invited for the tenth annual
+                <p>Presentations of research on all aspects of Coaching are invited for the eleventh annual
                 <!--  <a href="http://tiny.cc/harvardcoaching" target="_blank"> -->Coaching in Leadership and Healthcare: Theory, Practice and Results Conference. The
                   conference is organized by the Institute of Coaching, McLean Hospital, and Harvard Medical School
-                   on October 13-14, 2017 at <a href="http://www.marriott.com/hotels/travel/boswf-renaissance-boston-waterfront-hotel/" target="_blank">
+                   on September 28-29, 2018 at <a href="http://www.marriott.com/hotels/travel/boswf-renaissance-boston-waterfront-hotel/" target="_blank">
                   The Renaissance Boston Waterfront Hotel</a>, Boston, MA.</p>
 
                 <p class="bold" class="line">Types of Submissions</p>
@@ -44,15 +44,15 @@
                       as the winners of the Best Poster Competition and Honorary Mention winners.</li>
                     <li class="bold">Submissions that promote commercial interests or that feature proprietary materials will not be accepted.</li>
                     <li>Presenting authors of all accepted papers and posters <!-- <span class="bold"><a href="http://tiny.cc/harvardcoaching" target="_blank"> -->must register and pay the conference registration fee.</a> Authors of accepted papers
-                    must register by August 19, 2017 to be included in the conference program.<span></li>
+                    must register by August 19, 2018 to be included in the conference program.<span></li>
                     <li>Posters will not be considered for poster awards or be displayed without at least one author <!-- <a href="http://tiny.cc/harvardcoaching" target="_blank"> -->registered to attend the conference</a>
                       and in attendance at the conference.</li>
                 </ul>
 
 
               	<p class="bold" class="line">Deadline Information</p>
-                  <p>The deadline for paper and poster online submissions is <span class="bold" class="red"> May 15, 2017 by 11:59 PM EDT.</span></p>
-                  <p>Decisions will be announced by <span class="bold" class="red"> Friday, June 15, 2017.</span></p>
+                  <p>The deadline for paper and poster online submissions is <span class="bold" class="red"> May 1, 2018 by 11:59 PM EDT.</span></p>
+                  <p>Decisions will be announced by <span class="bold" class="red"> June 15, 2018.</span></p>
 
                 </div>
 </div>

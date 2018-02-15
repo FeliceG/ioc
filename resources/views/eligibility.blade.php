@@ -29,7 +29,7 @@
       		<li>The Scientific Advisory Council of the Institute of Coaching will review all paper and poster submissions and select those to be presented at the conference as well as the winners of the Best Poster Competition and Honorary Mention winners.</li>
       		<li class="bold">Submissions that promote commercial interests or that feature proprietary materials will not be accepted.</li>
       		<li>Presenting authors of all accepted papers and posters <!-- <a href="http://tiny.cc/harvardcoaching" target="_blank"> -->must register and pay the conference registration fee. Authors of accepted papers must
-          register by August 19, 2017 to be included in the conference program.</li>
+          register by August 19, 2018 to be included in the conference program.</li>
           <li>Posters will not be considered for poster awards or be displayed without a t least one author registered for the conference and in attendace at the conference.</li>
       	</ul>
 

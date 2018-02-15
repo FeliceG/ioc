@@ -11,15 +11,14 @@
 
 <ul>
 <li>Papers and posters can describe original empirical research, meta-analyses, and theoretical discussions.</li>
-<li><span class="bold">The deadline</span> for online applications submission has been extended to May 25, 2017 by 11:59 PM EDT. Decisions will be announced by  July 1, 2017.</li>
 <li><span class="bold">Main Author</span>: applicant submitter.</li>
 <li><span class="bold">Co-Author(s)</span>: include up to five co-author names and organizations.</li>
 <li><span class="bold">Title:</span> maximum of 40 words.</li>
 <li><span class="bold">Research:</span> maximum of 500 words to include <strong>background, objectives, design, methods, findings and discussions.</strong></li>
-<li><span class="bold">Brief Abstract:</span> maximum of 250 words. Summary of research for publication in the conference program.</li>
+<li><span class="bold">Brief Abstract:</span> maximum of 200 words. Summary of research for publication in the conference program.</li>
 </ul>
 
-<p class="bold">Additional information for accepted posters:</p>
+<p class="bold">Additional information:</p>
 <ul>
 <li>Papers and posters can describe original empirical research (quantitative, qualitative or
   mixed-methods research), meta-analyses, and theoretical discussions.</li>
@@ -39,7 +38,8 @@
   and select those to be presented at the conference as well as the winners of the Best Poster
  Award and Honorary Mention winners.</li>
 <li class="bold">Submissions that promote commercial interests or that feature proprietary materials
-  will not be accepted.</li>
+  will not be accepted.  <u>Submissions which only present and/or promote a coaching program/model
+  or approach without including empirical data or theoretical analysis will also not be accepted.</u></li>
 <li>Presenting authors of all accepted papers and posters must register and pay the conference registration
   fee. Authors of accepted papers and posters must register by August 19, 2017 to be included in the
   conference program.</li>
@@ -48,8 +48,8 @@
 </ul>
 
 <p class="bold">Deadline Information</p>
-<p>The deadline for paper and poster online submissions is <span class="bold">May 15, 2017 by 11:59 PM EDT.</span><br>
-Decisions will be announced by <span class="bold">July 1st, 2017.</span></p>
+<p>The deadline for paper and poster online submissions is <span class="bold">May 1st, 2018 by 11:59 PM EDT.</span><br>
+Decisions will be announced by <span class="bold">June 15th, 2018.</span></p>
 <br>
 
 <h3><strong>Poster Competition</strong></h3>
@@ -58,7 +58,7 @@ Decisions will be announced by <span class="bold">July 1st, 2017.</span></p>
 Advisory Council of the Institute of Coaching will select the winners of the Best Poster Competition
 Award and Honorary Mention winners.</p>
 
-<p>Accepted poster presenters must submit the final PDF poster by <span class="bold">Monday, August 1, 2017
+<p>Accepted poster presenters must submit the final PDF poster by <span class="bold">August 1, 2018
    11:59 PM EDT </span>to be entered into the competition. An upload link accessible through your account
    will be made available closer to the deadline.</p>
 
@@ -86,8 +86,8 @@ Award and Honorary Mention winners.</p>
 <p class="bold">Additional information for presenting the posters:</p>
 <ul>
 <li>Posters can be <strong>no larger than 72 inches wide by 48 inches tall.</strong></li>
-<li>Bring your final poster to the conference venue "Help" desk (located on 3rd floor of hotel) by 8:00am on Friday, October 13, 2017 to hang your poster.</li>
-<li>On Friday, October 13, 2017, from 5:15-6:45pm, there will be a general poster session and networking reception.</li>
+<li>Bring your final poster to the conference venue "Help" desk (located on 3rd floor of hotel) by 8:00am on Friday, September 28th, 2018 to hang your poster.</li>
+<li>On Friday, September 28th, 2018, from 5:15-6:45pm, there will be a general poster session and networking reception.</li>
 </ul>
 
 </div>
