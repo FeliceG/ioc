@@ -38,8 +38,8 @@
   and select those to be presented at the conference as well as the winners of the Best Poster
  Award and Honorary Mention winners.</li>
 <li class="bold">Submissions that promote commercial interests or that feature proprietary materials
-  will not be accepted.  <u>Submissions which only present and/or promote a coaching program/model
-  or approach without including empirical data or theoretical analysis will also not be accepted.</u></li>
+  will not be accepted. Submissions which only present and/or promote a coaching program/model
+  or approach without including empirical data or theoretical analysis will also not be accepted.</li>
 <li>Presenting authors of all accepted papers and posters must register and pay the conference registration
   fee. Authors of accepted papers and posters must register by August 19, 2017 to be included in the
   conference program.</li>
