@@ -41,7 +41,7 @@
   will not be accepted. Submissions which only present and/or promote a coaching program/model
   or approach without including empirical data or theoretical analysis will also not be accepted.</li>
 <li>Presenting authors of all accepted papers and posters must register and pay the conference registration
-  fee. Authors of accepted papers and posters must register by August 19, 2017 to be included in the
+  fee. Authors of accepted papers and posters must register by August 17, 2018 to be included in the
   conference program.</li>
 <li>Posters will not be considered for poster awards or be displayed without at least one author registered
   to attend the conference and in attendance at the conference.</li>
